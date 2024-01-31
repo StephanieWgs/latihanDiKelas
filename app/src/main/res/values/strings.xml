@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">layout</string>
+    <string name="btnClear">Clear</string>
+    <string name="btnSave">Save</string>
+    <string name="submit">Submit</string>
+    <string name="nama">Nama</string>
+    <string name="tandaPetik">:</string>
+    <string name="gender">Gender</string>
+    <string name="pria">Pria</string>
+    <string name="wanita">Wanita</string>
+    <string name="hobi">Hobi</string>
+    <string name="hobi1">Coding</string>
+    <string name="hobi2">Reading</string>
+    <string name="hobi3">Travelling</string>
+    <string name="add">Tambah</string>
+    <string name="del">Hapus</string>
+
+</resources>

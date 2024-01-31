@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".latihanActivity">
+    <include layout="@layout/toolbar">
+
+    </include>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="40dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="40dp"
+            android:layout_marginStart="30dp">
+
+            <TextView
+                android:id="@+id/nama"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:text="@string/nama"
+                android:textStyle="bold"
+                android:textSize="@dimen/fntPert"
+                android:textColor="@color/grey"/>
+            <TextView
+                android:id="@+id/tanda1"
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"
+                android:text="@string/tandaPetik"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:textSize="@dimen/fntPert"
+                android:textColor="@color/grey"/>
+
+            <EditText
+                android:id="@+id/isiNama"
+                android:layout_width="260dp"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:textStyle="bold"
+                android:textSize="@dimen/fntPert"
+                android:backgroundTint="@color/line"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="30dp">
+            <TextView
+                android:id="@+id/gender"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:paddingVertical="15dp"
+                android:text="@string/gender"
+                android:textStyle="bold"
+                android:textSize="@dimen/fntPert"
+                android:textColor="@color/grey"/>
+            <TextView
+                android:id="@+id/tanda2"
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"
+                android:text="@string/tandaPetik"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:textSize="@dimen/fntPert"
+                android:textColor="@color/grey"/>
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radio_pria"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/pria"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/fntIsi"
+                    android:layout_marginTop="5dp"/>
+
+                <RadioButton android:id="@+id/radio_wanita"
+                    android:layout_marginStart="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/wanita"
+                    android:textStyle="bold"
+                    android:layout_marginTop="5dp"
+                    android:textSize="@dimen/fntIsi"/>
+            </RadioGroup>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="30dp">
+
+            <TextView
+                android:id="@+id/hobi"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:text="@string/hobi"
+                android:textStyle="bold"
+                android:textSize="@dimen/fntPert"
+                android:paddingVertical="15dp"
+                android:textColor="@color/grey"/>
+            <TextView
+                android:id="@+id/tanda3"
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"
+                android:text="@string/tandaPetik"
+                android:textSize="@dimen/fntPert"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:textColor="@color/grey"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <CheckBox android:id="@+id/checkbox_coding"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/hobi1"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/fntIsi"
+                    android:layout_marginTop="5dp"/>
+                <CheckBox
+                    android:id="@+id/checkbox_reading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/hobi2"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/fntIsi"/>
+                <CheckBox
+                    android:id="@+id/checkbox_travelling"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/hobi3"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/fntIsi"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="end"
+            android:layout_marginEnd="30dp"
+            android:layout_marginTop="30dp">
+            <ImageButton
+                android:id="@+id/tambah"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/add"
+                android:src="@drawable/plus_24"
+                android:layout_marginEnd="20dp"
+                android:padding="15dp"
+                app:tint="#749c1b" />
+            <ImageButton
+                android:id="@+id/hapus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/del"
+                android:src="@drawable/cross_24"
+                android:padding="15dp"
+                app:tint="#ed004c" />
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
