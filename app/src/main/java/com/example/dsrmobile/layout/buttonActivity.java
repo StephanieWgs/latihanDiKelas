@@ -2,6 +2,7 @@ package com.example.dsrmobile.layout;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -18,7 +19,11 @@ public class buttonActivity extends AppCompatActivity {
         supabutton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                //Catat di log
                 Log.d("BUTTONS", "Button supa di-klik");
+                //Pindah dari button activity ke checkRadio
+                Intent intent = new Intent(buttonActivity.this, checkRadioActivity.class);
+                startActivity(intent);
             }
         });
     }

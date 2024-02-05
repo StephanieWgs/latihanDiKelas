@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".latihanActivity">
+    <include layout="@layout/tab_kuis">
+
+    </include>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="40dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="40dp"
+            android:layout_marginStart="30dp">
+
+            <TextView
+                android:id="@+id/keg"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="@string/keg"
+                android:textStyle="bold"
+                android:textSize="@dimen/isi"
+                android:textColor="@color/grey"/>
+
+            <EditText
+                android:id="@+id/isiKeg"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:textStyle="bold"
+                android:textSize="@dimen/fntPert" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="30dp">
+            <TextView
+                android:id="@+id/tempat"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:paddingVertical="15dp"
+                android:text="@string/tpt"
+                android:textStyle="bold"
+                android:textSize="@dimen/isi"
+                android:textColor="@color/grey"/>
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/radio_luar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/luar"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/fntIsi"
+                    android:layout_marginTop="5dp"/>
+
+                <RadioButton android:id="@+id/radio_dalam"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/dalam"
+                    android:textStyle="bold"
+                    android:layout_marginTop="5dp"
+                    android:textSize="@dimen/fntIsi"/>
+            </RadioGroup>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="30dp">
+
+            <TextView
+                android:id="@+id/jenis"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="@string/jenis"
+                android:textStyle="bold"
+                android:textSize="@dimen/isi"
+                android:paddingVertical="15dp"
+                android:textColor="@color/grey"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <CheckBox android:id="@+id/checkbox_olahraga"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/olahraga"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/fntIsi"
+                    android:layout_marginTop="5dp"/>
+                <CheckBox
+                    android:id="@+id/checkbox_jalan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/jalan"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/fntIsi"/>
+
+                <CheckBox
+                    android:id="@+id/checkbox_makan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/makan"
+                    android:textSize="@dimen/fntIsi"
+                    android:textStyle="bold" />
+                <CheckBox
+                    android:id="@+id/checkbox_belajar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/belajar"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/fntIsi"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp">
+            <Button
+                android:id="@+id/save"
+                android:layout_width="340dp"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/lightgreen"
+                android:text="@string/simpan"
+                android:textSize="@dimen/fntIsi">
+
+            </Button>
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

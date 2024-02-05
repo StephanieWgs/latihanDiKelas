@@ -3,7 +3,10 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="grey">#808080</color>
-    <color name="green">#018578</color>
+    <color name="green">#859839</color>
+    <color name="lightgreen">#a1b758</color>
     <color name="darkgreen">#00574b</color>
     <color name="line">#b14b6f</color>
+    <color name="bg">#eddbc6</color>
+    <color name="kotak">#d5b694</color>
 </resources>

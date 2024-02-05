@@ -14,5 +14,27 @@
     <string name="hobi3">Travelling</string>
     <string name="add">Tambah</string>
     <string name="del">Hapus</string>
+    <string name="profil">Profil</string>
+    <string name="isiProfil">Perbaharui Foto, nama dan informasi lainnya</string>
+    <string name="toDoList">Todo List</string>
+    <string name="isiToDo">Tulis jadwal rencana kegiatan Anda</string>
+    <string name="judul">Data Mahasiswa</string>
+    <string name="NIM">NIM</string>
+    <string name="jurusan">Jurusan</string>
+    <string name="btnOke">Oke</string>
+    <string name="isiNama">Stephanie</string>
+
+    <string name="keg">Nama Kegiatan</string>
+    <string name="tpt">Tempat Kegiatan</string>
+    <string name="jenis">Jenis Kegiatan</string>
+    <string name="luar">Luar Ruangan</string>
+    <string name="dalam">Dalam Ruangan</string>
+
+    <string name="olahraga">Olahraga</string>
+    <string name="jalan">Jalan-Jalan</string>
+    <string name="makan">Makan</string>
+    <string name="belajar">Belajar</string>
+
+    <string name="simpan">SIMPAN</string>
 
 </resources>
