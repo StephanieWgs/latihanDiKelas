@@ -43,7 +43,7 @@ public class toDoList extends AppCompatActivity {
                 if(radio_dalam.isChecked()){
                     tempat = "Dalam Ruangan";
                 }
-                StringBuilder jenis = new StringBuilder("Jenis: \n");
+                StringBuilder jenis = new StringBuilder("\n");
                 if (checkbox_olahraga.isChecked()) {
                     jenis.append("- Olahraga\n");
                 }
@@ -56,7 +56,10 @@ public class toDoList extends AppCompatActivity {
                 if (checkbox_belajar.isChecked()) {
                     jenis.append("- Belajar\n");
                 }
-                String message = keg + " (" + tempat + ")\n" + jenis.toString();
+                String message = "Berhasil Disimpan" +
+                        "\nNama Kegiatan    : " + keg +
+                        "\nTempat Kegiatan : " + tempat +
+                        "\nJenis Kegiatan: " + jenis.toString();
                 int duration = Toast.LENGTH_SHORT;
 
                 Toast toast = Toast.makeText(toDoList.this, message, duration);
